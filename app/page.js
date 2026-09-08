@@ -34,7 +34,7 @@ export default function Home(){
           <div className="actions"><a className="btn primary" href="#contact">Work with me</a><a className="textlink" href="https://www.linkedin.com/in/javinjettevar/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
         </div>
         <div className="hero-photo-wrap">
-          <div className="hero-photo" aria-label="Jay Tevar" style={{backgroundImage:"url('https://avatars.githubusercontent.com/u/294640069?v=4')"}} />
+          <div className="hero-photo" aria-label="Jay Tevar" style={{backgroundImage:"url('/jay.jpg')"}} />
           <div className="photo-caption">Jay Tevar · Philippines</div>
         </div>
       </section>
@@ -46,7 +46,7 @@ export default function Home(){
 
       <section className="section" id="work"><div className="container">
         <div className="section-intro"><div className="eyebrow">Selected work</div><h2>Things I am actually building.</h2><p>Ongoing projects that show how I combine research, content, design, AI, and technology.</p></div>
-        <div className="work-grid">{projects.map(p=><a className="work-card" href={p.url} target="_blank" rel="noreferrer" key={p.title}><div className="card-top"><span>{p.type}</span><span>↗</span></div><div className="project-logo"><img src={p.logo} alt="" onError={(e)=>{e.currentTarget.style.display='none'}}/><span>{p.title}</span></div><h3>{p.title}</h3><p>{p.desc}</p><div className="card-meta">{p.meta}</div></a>)}</div>
+        <div className="work-grid">{projects.map(p=><a className="work-card" href={p.url} target="_blank" rel="noreferrer" key={p.title}><div className="card-top"><span>{p.type}</span><span>↗</span></div><div className="project-logo" style={{display:'flex',alignItems:'center',gap:'12px',margin:'28px 0 0',minHeight:'42px'}}><img src={p.logo} alt="" style={{width:'42px',height:'42px',objectFit:'contain',borderRadius:'8px'}} onError={(e)=>{e.currentTarget.style.display='none'}}/><span style={{fontSize:'12px',color:'#777',fontWeight:700}}>{p.title}</span></div><h3>{p.title}</h3><p>{p.desc}</p><div className="card-meta">{p.meta}</div></a>)}</div>
       </div></section>
 
       <section className="section" id="about"><div className="container about">
@@ -60,6 +60,6 @@ export default function Home(){
       </div></section>
     </main>
 
-    <footer className="footer"><div className="container footer-inner"><div className="footer-person"><div className="footer-photo" style={{backgroundImage:"url('https://avatars.githubusercontent.com/u/294640069?v=4')"}} /><div><strong>Jay Tevar</strong><span>AI · Marketing · Digital Solutions</span></div></div><a href="mailto:jettevar@outlook.com">jettevar@outlook.com</a></div></footer>
+    <footer className="footer"><div className="container footer-inner"><div className="footer-person"><div className="footer-photo" style={{backgroundImage:"url('/jay.jpg')"}} /><div><strong>Jay Tevar</strong><span>AI · Marketing · Digital Solutions</span></div></div><a href="mailto:jettevar@outlook.com">jettevar@outlook.com</a></div></footer>
   </>;
 }
