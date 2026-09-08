@@ -1,10 +1,16 @@
 const profileImage = 'https://raw.githubusercontent.com/jettevar/jaytevar/main/profile.jpg';
 
+const logos = {
+  cakeSumo: 'data:image/webp;base64,UklGRsEWAABXRUJQVlA4WAoAAAAQAAAAIAAAAQAAQUxQSDIAAAARL6CobZ9g/8t/0sQf4Gv8eYQYgE1JmKkQ0dQ3kJ7J6h3q5V8YpZJ8cQ2o5QkqkJ9sQqv0nJ9cW2kY0lQ8Wf5YwKpY0lQ8mP8YwAAAA=',
+  unscoped: 'data:image/webp;base64,UklGRkYAAABXRUJQVlA4WAoAAAAQAAAAEAAAABAAQUxQSDIAAAARL6CobZ9g/8t/0sQf4Gv8eYQYgE1JmKkQ0dQ3kJ7J6h3q5V8YpZJ8cQ2o5QkqkJ9sQqv0nJ9cW2kY0lQ8Wf5YwKpY0lQ8mP8YwAAAA=',
+  auberyn: 'data:image/webp;base64,UklGRjAAAABXRUJQVlA4WAoAAAAQAAAAEAAAABAAQUxQSDIAAAARL6CobZ9g/8t/0sQf4Gv8eYQYgE1JmKkQ0dQ3kJ7J6h3q5V8YpZJ8cQ2o5QkqkJ9sQqv0nJ9cW2kY0lQ8Wf5YwKpY0lQ8mP8YwAAAA=',
+};
+
 const projects = [
-  { title:'Unscoped', type:'Product development', desc:'A contractor quoting and tracking platform designed around the way small teams actually price and manage work.', meta:'Product development · Web app · Supabase · Vercel', url:'https://getunscoped.com', logo:'https://getunscoped.com/favicon.ico', image:'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80' },
-  { title:'Cake Sumo', type:'Web application', desc:'A quoting tool built to make custom cake orders easier to price, organize, and turn into a clear customer proposal.', meta:'Product concept · Workflow design · Web app · AI-assisted', url:'https://cakesumo.vercel.app', logo:'https://cakesumo.vercel.app/favicon.ico', image:'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80' },
+  { title:'Unscoped', type:'Product development', desc:'A contractor quoting and tracking platform designed around the way small teams actually price and manage work.', meta:'Product development · Web app · Supabase · Vercel', url:'https://getunscoped.com', logo:logos.unscoped, image:'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80' },
+  { title:'Cake Sumo', type:'Web application', desc:'A quoting tool built to make custom cake orders easier to price, organize, and turn into a clear customer proposal.', meta:'Product concept · Workflow design · Web app · AI-assisted', url:'https://cakesumo.vercel.app', logo:logos.cakeSumo, image:'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80' },
   { title:'Blumentritt Avenue', type:'Research + content', desc:'A Philippine mythology and cultural database that turns scattered research into an accessible digital experience.', meta:'Research · Content strategy · Database · Web', url:'https://blumentritt.vercel.app', logo:'https://blumentritt.vercel.app/favicon.ico', image:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Street_scene_in_Manila%2C_Philippines%2C_ca.1900_%28CHS-1578%29.jpg/1280px-Street_scene_in_Manila%2C_Philippines%2C_ca.1900_%28CHS-1578%29.jpg' },
-  { title:'Auberyn', type:'Business concept', desc:'A practical digital solutions practice exploring how AI, design, and simple systems can solve everyday business problems.', meta:'Business concept · Web development · Design systems · AI', url:'https://auberyn.vercel.app', logo:'https://auberyn.vercel.app/favicon.ico', image:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80' }
+  { title:'Auberyn', type:'Business concept', desc:'A practical digital solutions practice exploring how AI, design, and simple systems can solve everyday business problems.', meta:'Business concept · Web development · Design systems · AI', url:'https://auberyn.vercel.app', logo:logos.auberyn, image:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80' }
 ];
 
 const capabilities = [
