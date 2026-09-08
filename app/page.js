@@ -40,7 +40,7 @@ export default function Home(){
         <div className="section-head"><div><div className="eyebrow">Featured work</div><h2>Things I am actually building.</h2></div><p>Real projects that show how I combine research, content, design, AI, and technology.</p></div>
         <div className="work-grid">{projects.map(p=><a className="work-card" href={p.url} target="_blank" rel="noreferrer" key={p.title}>
           <div className="work-image" style={{backgroundImage:`linear-gradient(135deg, rgba(238,232,220,.18), rgba(45,45,42,.08)), url(${p.title==='Unscoped'?'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80':p.title==='Cake Sumo'?'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80':p.title==='Blumentritt Avenue'?'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80':'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80'}`}} />
-          <div className="work-content"><div className="card-top"><span>{p.type}</span><span>↗</span></div><div className="project-name"><img src={p.logo} alt="" onError={(e)=>{e.currentTarget.style.display='none'}}/><h3>{p.title}</h3></div><p>{p.desc}</p><div className="card-meta">{p.meta}</div><span className="view-link">View Project <b>→</b></span></div>
+          <div className="work-content"><div className="card-top"><span>{p.type}</span><span>↗</span></div><div className="project-name"><img src={p.logo} alt=""/><h3>{p.title}</h3></div><p>{p.desc}</p><div className="card-meta">{p.meta}</div><span className="view-link">View Project <b>→</b></span></div>
         </a>)}</div>
       </div></section>
 
