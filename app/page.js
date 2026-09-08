@@ -1,3 +1,5 @@
+const profileImage = 'https://raw.githubusercontent.com/jettevar/jaytevar/main/profile.jpg';
+
 const projects = [
   { title:'Unscoped', type:'Product development', desc:'Contractor quoting and tracking platform built around a practical business workflow.', meta:'Product development · Web app · Supabase · Vercel', url:'https://getunscoped.com', logo:'https://getunscoped.com/favicon.ico' },
   { title:'Cake Sumo', type:'Web application', desc:'Quote builder and customer quoting platform for bakers and cake businesses.', meta:'Product concept · Workflow design · Web app · AI-assisted', url:'https://cakesumo.vercel.app', logo:'https://cakesumo.vercel.app/favicon.ico' },
@@ -31,9 +33,7 @@ export default function Home(){
           <div className="tag-row"><span>Content</span><span>Marketing</span><span>AI</span><span>Research</span><span>Operations</span><span>Digital</span></div>
           <div className="actions"><a className="btn primary" href="#work">View My Work <span>→</span></a><a className="btn secondary" href="https://calendly.com/jtevar-ibex/30min" target="_blank" rel="noreferrer">Let's Talk</a></div>
         </div>
-        <div className="hero-visual">
-          <div className="portrait" style={{backgroundImage:"url('/profile.jpg')"}} aria-label="Jay Tevar" />
-        </div>
+        <div className="hero-visual"><div className="portrait" style={{backgroundImage:`url(${profileImage})`}} aria-label="Jay Tevar" /></div>
       </section>
 
       <section className="section" id="work"><div className="container">
@@ -46,7 +46,7 @@ export default function Home(){
 
       <section className="section capabilities" id="capabilities"><div className="container">
         <div className="section-head"><div><div className="eyebrow">What I can help with</div><h2>Different problems. A common approach.</h2></div><p>I bring together communication, business judgment, research, and modern tools instead of treating every problem as a single-function task.</p></div>
-        <div className="cap-grid">{capabilities.map(([title,desc])=><article className="cap" key={title}><div className="cap-number">0{capabilities.findIndex(x=>x[0]===title)+1}</div><h3>{title}</h3><p>{desc}</p></article>)}</div>
+        <div className="cap-grid">{capabilities.map(([title,desc],i)=><article className="cap" key={title}><div className="cap-number">0{i+1}</div><h3>{title}</h3><p>{desc}</p></article>)}</div>
       </div></section>
 
       <section className="section about" id="about"><div className="container about-grid">
