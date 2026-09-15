@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Jay Tevar | AI-Enabled Marketing & Business Solutions',
-  description: 'Marketing, content, research, operations, creative production, and AI-assisted digital solutions by Jay Tevar.',
+  title: 'Jay Tevar | Marketing, Operations, Content & Research',
+  description: 'Jay Tevar is a cross-functional marketing and operations professional with 15+ years of experience across content, research, communications, process improvement, and business support.',
   icons: { icon: '/icon.svg', shortcut: '/icon.svg', apple: '/icon.svg' }
 };
 
