@@ -1,7 +1,7 @@
 const profileImage = 'https://raw.githubusercontent.com/jettevar/jaytevar/main/profile.jpg';
 
 const projects = [
-  { title:'Unscoped', type:'Product development', desc:'A contractor quoting and tracking platform built to make pricing, proposals, and project follow-up easier.', meta:'Product development · Web app · Supabase · Vercel', url:'https://getunscoped.com', logo:'/logos/unscoped.svg', image:'https://images.unsplash.com/photo-1771868453049-b7b4a4680b5c?auto=format&fit=crop&fm=jpg&q=75&w=1200' },
+  { title:'Unscoped', type:'AI-assisted product', desc:'A live change-request tool that helps remodeling contractors price extra work and get clear customer approval.', meta:'Problem research · Product direction · UX · QA · Vercel', url:'/work/unscoped', logo:'/logos/unscoped.svg', image:'/unscoped/dashboard.png', internal:true },
   { title:'Cake Sumo', type:'Web application', desc:'A quoting tool for custom cake orders, from pricing and order details to a clear customer proposal.', meta:'Product concept · Workflow design · Web app · AI-assisted', url:'https://cakesumo.vercel.app', logo:'/logos/cake-sumo.svg', image:'https://images.unsplash.com/photo-1778790508237-3c6cb00f152a?auto=format&fit=crop&fm=jpg&q=75&w=1200' },
   { title:'Blumentritt Avenue', type:'Research + content', desc:'A Philippine mythology and cultural database that turns scattered research into an accessible digital experience.', meta:'Research · Content strategy · Database · Web', url:'https://blumentritt.vercel.app', logo:'/logos/blumentritt.svg', image:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Street_scene_in_Manila%2C_Philippines%2C_ca.1900_%28CHS-1578%29.jpg/1280px-Street_scene_in_Manila%2C_Philippines%2C_ca.1900_%28CHS-1578%29.jpg' },
   { title:'Auberyn', type:'Business concept', desc:'A practical digital solutions practice exploring how AI, design, and simple systems can solve everyday business problems.', meta:'Business concept · Web development · Design systems · AI', url:'https://auberyn.vercel.app', logo:'/logos/auberyn.svg', image:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80' }
@@ -38,9 +38,9 @@ export default function Home(){
 
       <section className="section" id="work"><div className="container">
         <div className="section-head"><div><div className="eyebrow">Featured work</div><h2>Work that solves a problem.</h2></div><p>Selected projects across product development, research, content, and digital work.</p></div>
-        <div className="work-grid">{projects.map(p=><a className="work-card" href={p.url} target="_blank" rel="noreferrer" key={p.title}>
+        <div className="work-grid">{projects.map(p=><a className="work-card" href={p.url} target={p.internal ? undefined : '_blank'} rel={p.internal ? undefined : 'noreferrer'} key={p.title}>
           <div className="work-image" style={{backgroundImage:`linear-gradient(135deg, rgba(238,232,220,.18), rgba(45,45,42,.08)), url(${p.image})`}} />
-          <div className="work-content"><div className="card-top"><span>{p.type}</span><span>↗</span></div><div className="project-name"><img src={p.logo} alt={`${p.title} logo`} /><h3>{p.title}</h3></div><p>{p.desc}</p><div className="card-meta">{p.meta}</div><span className="view-link">View Project <b>→</b></span></div>
+          <div className="work-content"><div className="card-top"><span>{p.type}</span><span>{p.internal ? 'Case study' : '↗'}</span></div><div className="project-name"><img src={p.logo} alt={`${p.title} logo`} /><h3>{p.title}</h3></div><p>{p.desc}</p><div className="card-meta">{p.meta}</div><span className="view-link">{p.internal ? 'Read Case Study' : 'View Project'} <b>→</b></span></div>
         </a>)}</div>
       </div></section>
 
