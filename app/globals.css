@@ -19,3 +19,23 @@
 @media(max-width:980px){.hero{grid-template-columns:1fr;gap:50px;min-height:auto}.hero-visual{min-height:510px;max-width:560px;margin:auto;width:100%}.proof article{padding:25px 22px}.role-grid{grid-template-columns:1fr}.role-card{border-right:0;border-bottom:1px solid var(--line);min-height:0}.role-card:last-child{border-bottom:0}.card-number{margin-bottom:24px}.project.featured{grid-template-columns:1fr}.project-image{min-height:360px;border-right:0;border-bottom:1px solid var(--line)}.experience-layout,.method-layout{grid-template-columns:1fr;gap:45px}.experience-intro{position:static}.writing-grid{grid-template-columns:1fr 1fr}.contact-card{grid-template-columns:1fr;gap:38px}.footer-inner{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.container{width:min(calc(100% - 28px),var(--max))}.nav{height:68px}.nav nav{display:none}.nav-cta{font-size:.75rem;padding:8px 10px}.hero{padding:55px 0 72px}.hero h1{font-size:3.55rem}.hero-lede{font-size:1rem}.hero-visual{min-height:430px}.portrait{width:min(72%,315px)}.hero-note{left:2%;bottom:3%;width:165px}.proof-grid{grid-template-columns:1fr}.proof article,.proof article:first-child,.proof article:last-child{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}.proof article:last-child{border-bottom:0}.section{padding:78px 0}.section-head{display:block}.section-head>p{margin-top:18px}.work-list{grid-template-columns:1fr}.project.featured{grid-column:auto}.project-image{min-height:280px}.auberyn-note{grid-template-columns:38px 1fr}.auberyn-note>a{grid-column:2}.writing-grid{grid-template-columns:1fr}.writing-card{min-height:330px}.method-content li{grid-template-columns:1fr;gap:4px}.contact-card{padding:34px 25px}.footer-inner{grid-template-columns:1fr;gap:18px}}
 @media(max-width:460px){.hero h1{font-size:3rem}.actions{align-items:stretch;flex-direction:column}.btn{width:100%}.hero-visual{min-height:390px}.portrait{width:70%}.hero-note{width:150px;padding:13px}.section-head h2,.experience-intro h2,.method-layout h2{font-size:2.75rem}.project-content{padding:23px 21px 26px}.project-top{flex-direction:column;gap:4px}.timeline-head{display:block}.timeline-head>span{display:block;margin-top:7px}.contact-actions{align-items:stretch}.contact-actions .btn{min-width:0}.contact-card h2{font-size:2.8rem}}
+
+
+/* Focused recruiter-friendly portfolio */
+.hero{min-height:auto;padding-top:74px;padding-bottom:76px;gap:58px}
+.hero h1{font-size:clamp(3.1rem,5.4vw,5rem);line-height:1.02;max-width:750px}
+.hero-visual{min-height:480px}
+.portrait{width:min(75%,365px)}
+.section{padding:82px 0}
+.role-card{min-height:390px}
+.card-number{margin-bottom:24px}
+.role-card ul{margin-bottom:18px}
+.project-title{margin-top:23px}
+.project-title h3{font-size:2rem;line-height:1.08}
+.project-content{padding:32px}
+.writing-card{min-height:330px}
+.writing-card h3{margin-top:30px}
+.career-note{max-width:960px;border-left:3px solid var(--green);padding:4px 0 4px 20px;margin:30px 0 0;color:#5b574f;font-size:.9rem;line-height:1.75}
+.career-note strong{color:var(--ink)}
+@media(max-width:980px){.hero{gap:28px}.hero-visual{min-height:450px}.role-card{min-height:0}}
+@media(max-width:720px){.hero{padding:54px 0 62px}.hero h1{font-size:clamp(2.8rem,9vw,4rem)}.section{padding:68px 0}.work-list{grid-template-columns:1fr}.writing-card{min-height:0}.hero-visual{min-height:400px}}
