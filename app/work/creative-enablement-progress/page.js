@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from '../corporate-people-brand-book/page.module.css';
 
 export const metadata = {
   title: 'Creative Enablement Office Progress Report | Presentation Design by Jay Tevar',
